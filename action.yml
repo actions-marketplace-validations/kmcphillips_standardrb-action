@@ -1,7 +1,7 @@
 
-name: 'StandardRB Action'
-description: 'A GitHub Action that lints your Ruby code with StandardRB!'
-author: 'Andrew Mason <andrewmcodes@protonmail.com>'
+name: 'StandardRB linter'
+description: 'A GitHub Action to run StandardRB linters against Ruby and Rails code.'
+author: 'Kevin McPhillips <github@kevinmcphillips.ca>'
 runs:
   using: 'docker'
   image: 'Dockerfile'

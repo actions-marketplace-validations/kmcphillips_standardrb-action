@@ -1,16 +1,17 @@
 <div align="center">
   <img width="640" height="320" alt="StandardRB Action" src="screenshots/standardrb-action.png" style="border-radius:0.5rem;">
 
-  [![StandardRB](https://github.com/andrewmcodes/standardrb-action/actions/workflows/standard.yml/badge.svg)](https://github.com/andrewmcodes/standardrb-action/actions/workflows/standard.yml)
-  [![Test](https://github.com/andrewmcodes/standardrb-action/actions/workflows/test.yml/badge.svg)](https://github.com/andrewmcodes/standardrb-action/actions/workflows/test.yml)
-  [![build](https://github.com/andrewmcodes/standardrb-action/actions/workflows/build.yml/badge.svg)](https://github.com/andrewmcodes/standardrb-action/actions/workflows/build.yml)
-  [![release](https://github.com/andrewmcodes/standardrb-action/actions/workflows/release.yml/badge.svg)](https://github.com/andrewmcodes/standardrb-action/actions/workflows/release.yml)
-  ![Version Number](https://img.shields.io/static/v1?label=Version&message=v1.0.0&color=blue)
+  [![StandardRB](https://github.com/kmcphillips/standardrb-action/actions/workflows/standard.yml/badge.svg)](https://github.com/kmcphillips/standardrb-action/actions/workflows/standard.yml)
+  [![Test](https://github.com/kmcphillips/standardrb-action/actions/workflows/test.yml/badge.svg)](https://github.com/kmcphillips/standardrb-action/actions/workflows/test.yml)
+  [![build](https://github.com/kmcphillips/standardrb-action/actions/workflows/build.yml/badge.svg)](https://github.com/kmcphillips/standardrb-action/actions/workflows/build.yml)
+  ![Version Number](https://img.shields.io/static/v1?label=Version&message=v1.1.0&color=blue)
 </div>
 
 # :white_check_mark: StandardRB Action
 
 A GitHub Action to run [StandardRB](https://github.com/testdouble/standard) against your code and create annotations in the GitHub UI.
+
+Supports the [`standard-rails`](https://github.com/standardrb/standard-rails) plugin.
 
 ## :page_facing_up: Introduction
 
@@ -24,7 +25,7 @@ Add the following to your GitHub action workflow to use StandardRB Linter Action
 
 ```yaml
 - name: StandardRB Linter
-  uses: andrewmcodes/standardrb-action@v1.0.0
+  uses: kmcphillips/standardrb-action@v1.1.0
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -44,7 +45,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: StandardRB Linter
-      uses: andrewmcodes/standardrb-action@v1.0.0
+      uses: kmcphillips/standardrb-action@v1.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
