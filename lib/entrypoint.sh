@@ -2,6 +2,6 @@
 
 set -e
 
-gem install standard
+gem install standard standard-rails
 
 ruby /action/lib/index.rb

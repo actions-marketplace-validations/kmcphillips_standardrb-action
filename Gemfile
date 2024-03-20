@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 group :development do
   gem "standard", "~> 1.10"
+  gem "standard-rails", "~> 1.0.0"
 end
 
 group :test do
